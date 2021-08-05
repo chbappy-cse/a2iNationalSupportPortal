@@ -1,0 +1,27 @@
+/* breakpoint for responsive */
+
+@mixin bp-min($break){
+  @if map-has-key($map: $breakpoints, $key: $break){
+    @media (min-width: map-get($map: $breakpoints, $key: $break)){
+      @content;
+    }
+  }
+}
+
+@mixin bp-max($break){
+  @if map-has-key($map: $breakpoints, $key: $break){
+    @media (max-width: (map-get($map: $breakpoints, $key: $break) - 0.02px)){
+      @content;
+    }
+  }
+}
+
+@mixin bp-only($lower, $uppper){
+  @if (map-has-key($map: $breakpoints, $key: $lower) and map-has-key($map: $breakpoints, $key: $uppper)){
+    $lo: map-get($map: $breakpoints, $key: $lower);
+    $up: map-get($map: $breakpoints, $key: $uppper) - 0.02px;
+    @media (min-width: $lo) and (max-width: $up){
+      @content;
+    }
+  }
+}

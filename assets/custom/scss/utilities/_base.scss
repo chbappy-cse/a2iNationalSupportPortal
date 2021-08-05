@@ -1,0 +1,429 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar .nav-item {
+  .nav-link {
+    color: $white;
+    font-size: 14px;
+  }
+}
+.banner_area {
+  padding: 7.2% 0px;
+  background: url("../images/banner.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  .banner_left {
+    img {
+      margin-bottom: 50px;
+    }
+    .login_area {
+      input {
+        height: 50px;
+      }
+      h4 {
+        font-size: 20px;
+        margin-left: 33px;
+        margin-bottom: 20px;
+        color: $white;
+        font-weight: 500;
+      }
+      .login_btn {
+        margin-left: 33px;
+        display: inline-block;
+        margin-top: 20px;
+        transition: 0.5s;
+        padding: 7px 30px;
+        font-size: 14px;
+        &:hover {
+          background: transparent;
+          border: 1px solid $color1;
+        }
+      }
+    }
+  }
+  .banner_right {
+    h3 {
+      // padding-top: 50px;
+      color: $white;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .smi {
+      .top {
+        height: 120px;
+        // width: 118px;
+        background: rgba(242, 242, 242, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottom {
+        padding: 5px;
+        background: $color1;
+        // width: 118px;
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: $white;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+/* Banner End */
+
+.mainbody_footer {
+  .npitems {
+    .mbfi_left {
+      h4 {
+        font-size: 22px;
+        font-weight: 400;
+      }
+      h1 {
+        font-weight: 900;
+        color: #373737;
+        font-size: 35px;
+      }
+    }
+    .mbfi_right {
+      display: flex;
+      align-items: center;
+
+      .myProgress {
+        .progress_item1 {
+          height: 3px;
+          width: 10px;
+          background: #9d9d9d;
+          margin-bottom: 1px;
+        }
+        .progress_item2 {
+          height: 3px;
+          width: 10px;
+          background: transparent
+            linear-gradient(0deg, #38b928 5%, #d2eb00 100%) 0% 0% no-repeat
+            padding-box;
+          margin-bottom: 1px;
+        }
+      }
+    }
+  }
+}
+footer {
+  .f-img {
+    text-align: right;
+  }
+  ul {
+    li {
+      border-left: 2px solid #cdcdcd;
+    }
+    li:first-child {
+      border: none;
+    }
+  }
+}
+/* About Page */
+.about_area {
+  padding: 10.4% 0px;
+  .ab_left {
+    position: relative;
+    height: 400px;
+    iframe {
+      width: 100%;
+      height: 400px;
+    }
+    img {
+      width: 100%;
+      height: 400px;
+    }
+    .abimgposition {
+      position: absolute;
+      left: 0;
+    }
+  }
+  .ab_right {
+    padding: 0 0px 0 50px;
+    h2 {
+      font-size: 35px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 300;
+    }
+  }
+}
+/* Muktopaath Page */
+.muktopaath_area {
+  padding: 9% 0;
+  .muktopaath_left {
+    padding-right: 50px;
+    img {
+      padding-bottom: 25px;
+    }
+    h2 {
+      font-size: 35px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 16px;
+      padding: 35px 0px;
+      font-weight: 300;
+    }
+    .button {
+      text-align: right;
+      a {
+        display: inline-block;
+        padding: 10px 25px;
+        background: #2bc877;
+        color: $white;
+        text-decoration: none;
+        border-radius: 25px;
+        font-size: 14px;
+        border: 1px solid transparent;
+        transition: 0.5s;
+        &:hover {
+          color: #2bc877;
+          border: 1px solid #2bc877;
+          background: transparent;
+        }
+      }
+    }
+  }
+  .muktopaath_right {
+    padding-top: 50px;
+  }
+}
+/* Usermanual Page */
+.usermanual_area {
+  .usermanual_content {
+    padding: 20px 0;
+    .item {
+      margin: 15px;
+      .divider {
+        height: 64px;
+        width: 100%;
+        background: #e1dfdf;
+      }
+      p {
+        font-size: 20px;
+        font-weight: 400;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+/* Responsive Screen */
+@media (max-width: 1400px) {
+  .banner_area {
+    padding: 3.7% 0px;
+  }
+  .about_area {
+    padding: 7% 0px;
+    .ab_left {
+      height: 350px;
+      img {
+        height: 350px;
+      }
+      iframe {
+        height: 350px;
+      }
+    }
+    .ab_right p .span2 {
+      display: none;
+    }
+  }
+  .muktopaath_area {
+    padding: 3% 0;
+  }
+  .usermanual_content p {
+    font-size: 16px !important;
+  }
+}
+@media (max-width: 991.98px) {
+  .nav-link.text-capitalize.ps-4 {
+    padding-left: 0rem !important;
+  }
+  .about_area {
+    .ab_left {
+      height: 275px;
+      img {
+        height: 275px;
+      }
+      iframe {
+        height: 275px;
+      }
+    }
+    .ab_right {
+      padding: 0;
+      h2 {
+        font-size: 25px;
+      }
+      p .span1 {
+        display: none;
+      }
+    }
+  }
+  .muktopaath_area {
+    .muktopaath_left {
+      padding-right: 0;
+      h2 {
+        font-size: 25px;
+      }
+      p {
+        font-size: 14px;
+        padding: 10px 0px;
+      }
+      .button {
+        text-align: left;
+      }
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .form-group.w-75.d-flex {
+    width: 100% !important;
+  }
+  .banner_area .banner_left img {
+    margin-bottom: 20px;
+  }
+  .banner_right {
+    margin-top: 20px;
+  }
+  .about_area {
+    .ab_left img {
+      height: 275px;
+      min-width: 109% !important;
+    }
+    .ab_right {
+      padding: 0;
+      margin-top: 50px;
+    }
+  }
+  footer {
+    .f-item {
+      text-align: center;
+    }
+    .f-img {
+      text-align: center;
+      margin-top: 25px;
+    }
+  }
+}
+@media (max-width: 575.98px) {
+  .banner_area .banner_left img {
+    width: 100% !important;
+  }
+  .navbar-brand.text-capitalize {
+    font-size: 16px;
+  }
+  .form-group.w-75.d-flex {
+    width: 70% !important;
+  }
+  .form-group.w-75.d-flex input {
+    height: 40px !important;
+  }
+  .banner_area {
+    padding-bottom: 50px;
+  }
+  footer {
+    .f-img {
+      img {
+        width: 75% !important;
+      }
+    }
+  }
+  .about_area {
+    padding-bottom: 0px;
+    .ab_left img {
+      height: 250px;
+      min-width: 100% !important;
+    }
+    .ab_left iframe {
+      width: 100%;
+      height: 250px;
+    }
+    .ab_right {
+      padding: 0;
+      margin-top: 50px;
+    }
+  }
+  .muktopaath_left {
+    h2 {
+      font-size: 20px !important;
+    }
+  }
+}
+
+.banner_area .banner_left .login_area input {
+  height: 35px;
+}
+.banner_area {
+  padding: 2.5% 0px;
+}
+.banner_area .banner_right .smi .top {
+  height: 100px;
+}
+@media (max-width: 1400px) {
+  .banner_area {
+    padding: 2.7% 0px;
+  }
+}
+.banner_area .banner_right h3 {
+  margin-bottom: 15px;
+}
+.navbar {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.mainbody_footer .npitems .mbfi_right .myProgress .progress_item3 {
+  height: 3px;
+  width: 10px;
+  background: transparent -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(5%, #38b928),
+      to(#d2eb00)
+    ) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(0deg, #ba0e9b 5%, #d2eb00 100%) 0% 0%
+    no-repeat padding-box;
+  margin-bottom: 1px;
+}
+.mainbody_footer .npitems .mbfi_right .myProgress .progress_item4 {
+  height: 3px;
+  width: 10px;
+  background: transparent -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(5%, #38b928),
+      to(#d2eb00)
+    ) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(0deg, #1aa5e3 5%, #ba0e9b 100%) 0% 0%
+    no-repeat padding-box;
+  margin-bottom: 1px;
+}
+.mainbody_footer .npitems .mbfi_right .myProgress .progress_item5 {
+  height: 3px;
+  width: 10px;
+  background: transparent -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(5%, #38b928),
+      to(#d2eb00)
+    ) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(0deg, #9164e8 5%, #1aa5e3 100%) 0% 0%
+    no-repeat padding-box;
+  margin-bottom: 1px;
+}

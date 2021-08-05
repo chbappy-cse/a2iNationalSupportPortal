@@ -1,0 +1,52 @@
+/* background color */
+@each $k, $v in $colors{
+  .bg-#{$k}{
+    background: $v;
+  }
+}
+
+/* text color */
+@each $k, $v in $colors{
+  .text-#{$k}{
+    color: lighten($v, 10%);
+  }
+}
+
+/* custom button bg color and hover */
+@each $k, $v in $colors{
+  .btn-#{$k}{
+    background: $v;
+    @if $k == "yellow"{
+      color: #000;
+    } @else{
+      color: #fff;
+    }
+
+    &:hover{
+      background: darken($v, 15%);
+      @if $k == "yellow"{
+        color: #000;
+      } @else{
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* outline button */
+@each $k, $v in $colors{
+  .btn-outline-#{$k}{
+    border: 1px solid $v;
+    color: $v;
+    &:hover {
+      border-color: darken($v, 10%);
+      background: $v;
+      @if $k == "yellow"{
+        color: #000;
+      }
+      @else{
+        color: #fff;
+      }
+    }
+  }
+}

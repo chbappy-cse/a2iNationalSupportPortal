@@ -1,0 +1,51 @@
+/* responsive variables */
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 970px; // bootstrap v5 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+$breakpoints: (
+  "xs": $xs,
+  "sm": $sm,
+  "md": $md,
+  "lg": $lg,
+  "xl": $xl,
+  "xxl": $xxl,
+) !default;
+
+/* colors variable */
+$pink: #FF006E;
+$blue: #3A86FF;
+$green: #1B4332;
+$red: #F94144;
+$yellow: #F9C74F;
+$violet: #8338EC;
+$darkgray: #212529;
+
+$color1: #1B1464;
+$color2: #39B54A;
+$color3: #D8D8D8;
+$color4: #ABC9FF;
+$color5: #fcab10;
+$color6: #2b9eb3;
+
+$colors: (
+  "pink": $pink,
+  "blue": $blue,
+  "green": $green,
+  "red": $red,
+  "yellow": $yellow,
+  "violet": $violet,
+  "darkgray": $darkgray,
+  "color1": $color1,
+  "color2": $color2,
+  "color3": $color3,
+  "color4": $color4,
+  "color5": $color5,
+  "color6": $color6,
+) !default;
+
+/* font size variable */
+$spacer: 1rem;

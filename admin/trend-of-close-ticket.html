@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Bangladesh National Support Portal Admin Panel Developed By Ch Bappy"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, jQuery, Bootstrap, SASS"
+    />
+    <meta name="author" content="Ch Bappy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/custom/style.css" />
+    <title>Dashboard - National Support Portal</title>
+  </head>
+
+  <body>
+    <!-- wrapper start -->
+    <div class="wrapper">
+      <!-- header start -->
+      <header>
+        <nav class="navbar navbar-dark bg-color1">
+          <div class="container-fluid container-lg">
+            <a class="navbar-brand text-capitalize" href="index.html"
+              >dashboard</a
+            >
+            <div class="d-flex">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle shadow-none text-light"
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Logout
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="dropdownMenuLink"
+                >
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                </ul>
+              </div>
+              <button
+                type="button"
+                class="btn text-light btn-sm shadow-none d-block d-md-none"
+                id="pullright"
+              >
+                <i class="fas fa-cogs"></i>
+              </button>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- /header end -->
+      <!-- mainbody start -->
+      <div class="mainbody">
+        <div class="content-body container-lg px-0 px-lg-2 d-flex">
+          <!-- content top start -->
+          <div class="content">
+            <!-- Quick Menu Start -->
+            <div class="quick_menu">
+              <div class="container-fluid container-md"></div>
+            </div>
+            <!-- Quick Menu End -->
+            <!-- Content body start -->
+            <div class="content_body">
+              <div class="content_item container-fluid container-md">
+                <div class="row">
+                  <div class="col-12 mt-5">
+                    <canvas
+                      id="linefillchartpage"
+                      width="400"
+                      height="180"
+                    ></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Content body end -->
+          </div>
+          <!-- /content top end-->
+          <!-- rightbar start -->
+          <div class="rightbar mt-3" id="rightbar">
+            <div class="rightbody">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="tickete_buton">
+                      <a
+                        target="_blank"
+                        href="http://support.portal.gov.bd/otrs/customer.pl"
+                        class="btn btn-color2 w-100 shadow-none mb-3"
+                        >Create New Ticket</a
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <div class="card">
+                      <div
+                        class="
+                          card-header
+                          fz-1
+                          text-center
+                          bg-transparent
+                          border-0
+                          pb-0
+                        "
+                      >
+                        <span class="border-bottom">Total Support</span>
+                      </div>
+                      <div class="card-body py-0">
+                        <div class="d-block position-relative">
+                          <canvas
+                            id="doughnut"
+                            width="120"
+                            height="120"
+                            class="mx-auto"
+                          ></canvas>
+                          <h6
+                            class="position-absolute"
+                            style="
+                              top: 55%;
+                              left: 50%;
+                              transform: translate(-50%, -50%);
+                            "
+                          >
+                            65%
+                          </h6>
+                        </div>
+                      </div>
+                      <div
+                        class="
+                          card-footer
+                          bg-transparent
+                          border-0
+                          text-center
+                          mt-2
+                        "
+                      >
+                        <a
+                          class="
+                            btn btn-color2 btn-sm
+                            d-inline
+                            shadow-none
+                            w-100
+                            ps-4
+                            pe-4
+                          "
+                          href="total-support.html"
+                          >Details</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mb-3">
+                    <div class="card">
+                      <div class="card-body py-0">
+                        <canvas id="bar" width="120" height="120"></canvas>
+                      </div>
+                      <div
+                        class="card-footer bg-transparent border-0 text-center"
+                      >
+                        <a
+                          class="
+                            btn btn-color5 btn-sm
+                            d-inline
+                            shadow-none
+                            w-100
+                            ps-4
+                            pe-4
+                          "
+                          href="line-chart.html"
+                          >Details</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-body py-0">
+                        <canvas id="line" width="120" height="120"></canvas>
+                      </div>
+                      <div
+                        class="card-footer bg-transparent border-0 text-center"
+                      >
+                        <a
+                          class="
+                            btn btn-color6 btn-sm
+                            d-inline
+                            shadow-none
+                            w-100
+                            ps-4
+                            pe-4
+                          "
+                          href="trend-of-close-ticket.html"
+                          >Details</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /rightbar end -->
+        </div>
+        <!-- footer start -->
+        <footer class="py-4 bg-color3"></footer>
+        <!-- /footer end -->
+      </div>
+      <!-- /mainbody end -->
+    </div>
+    <!--/wrapper end-->
+
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/custom/main.js"></script>
+  </body>
+</html>

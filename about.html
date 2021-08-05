@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Bangladesh Govt National Support Portal Website Developed by Ch Bappy"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, jQuery, Bootstrap 5, SASS, Laravel 8"
+    />
+    <meta name="author" content="Ch Bappy" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/Group 39.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/custom/style.css" />
+    <title>Welcome to Bangladesh National Support Portal</title>
+  </head>
+
+  <body>
+    <!-- header start -->
+    <header class="bg-color1 text-light">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container">
+          <a class="navbar-brand text-capitalize" href="index.html"
+            >bangladesh national portal</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="index.html"
+                >
+                  <i class="fas fa-home"></i>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize ps-4" href="about.html"
+                  >about support</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize ps-4" href="muktopaath.html"
+                  >muktopaath portal training</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize ps-4" href="user-manual.html"
+                  >user manual</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- /header end -->
+    <section class="about_area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="ab_left">
+              <iframe
+                src="https://www.youtube.com/embed/Hvc9i10mqNk"
+                frameborder="0"
+                allowfullscreen
+                name="iframe_video1"
+              ></iframe>
+
+              <a
+                class="abimgposition"
+                href="https://www.youtube.com/embed/Hvc9i10mqNk"
+                target="iframe_video1"
+                ><img class="img-fluid w-100" src="assets/images/about.png"
+              /></a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="ab_right">
+              <h2>About Support</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                aliquam Lorem ipsum dolor sit amet, <br /><br />
+                consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                tincidunt ut laoreet dolore magna aliquam Lorem ipsum dolor sit
+                amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut laoreet dolore magna aliquam Lorem ipsum
+                dolor sit amet, consectetuer adipiscing elit,
+                <br /><br />
+                <span class="span1">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                  diam nonummy nibh euismod tincidunt ut laoreet dolore magna
+                  aliquam Lorem ipsum dolor sit amet,
+                </span>
+                <br /><br />
+                <span class="span2"
+                  >consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                  tincidunt ut laoreet dolore magna aliquam Lorem ipsum dolor
+                  sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                  euismod tincidunt ut laoreet dolore magna aliquam Lorem ipsum
+                  dolor sit amet, consectetuer adipiscing elit,</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer start -->
+    <footer class="bg-color3 py-3">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-sm-12 col-md-6 f-item">
+            <ul class="list-inline m-0">
+              <li class="list-inline-item">
+                <a
+                  href="#"
+                  class="nav-link text-capitalize text-muted fw-bold fz-0"
+                  >privacy policy</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="#"
+                  class="nav-link text-capitalize text-muted fw-bold fz-0"
+                  >contact</a
+                >
+              </li>
+              <li class="list-inline-item">
+                <a
+                  href="#"
+                  class="nav-link text-capitalize text-muted fw-bold fz-0"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 f-img">
+            <img src="assets/images/Group 140.png" class="w-50" alt="" />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /footer end -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/custom/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".abimgposition").click(function () {
+          $(this).hide();
+        });
+      });
+    </script>
+  </body>
+</html>

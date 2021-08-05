@@ -1,0 +1,14 @@
+/* font size for all aspect */
+
+// @for $i from 0 to 4 {
+//   .fz-#{$i}{
+//     font-size: $i * .8;
+//   }
+// }
+
+.fz-0{
+  font-size: $spacer * .75;
+}
+.fz-1{
+  font-size: $spacer * .85;
+}
